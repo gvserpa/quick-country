@@ -111,15 +111,11 @@ https://quick-country.vercel.app/
 
 👨‍💻 Future Improvements
 
-Add country search functionality
-
-Add filter by continent
-
-Implement dark/light mode
-
-Add local cache for exchange rates
-
-Improve card animations
+- Add country search functionality
+- Add filter by continent
+- Implement dark/light mode
+- Add local cache for exchange rates
+- Improve card animations
 
 📝 License
 
