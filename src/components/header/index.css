@@ -1,0 +1,74 @@
+/* Header padrão */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+}
+
+.logo {
+    cursor: pointer;
+}
+
+/* Menu principal */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Ícones de redes sociais */
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-icons img {
+    cursor: pointer;
+    width: 30px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .social-media-icons {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .social-media-icons img {
+        width: 25px;
+    }
+}

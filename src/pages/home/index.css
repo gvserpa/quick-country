@@ -1,0 +1,23 @@
+.home {
+  position: relative; /* necessário */
+  height: 100vh;
+  background-image: url('../../assets/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9); /* overlay preto */
+  z-index: 0; /* fica atrás do conteúdo */
+}
+
+/* Garante que o conteúdo fique acima do overlay */
+.home > * {
+  position: relative;
+  z-index: 1;
+}

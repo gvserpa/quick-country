@@ -1,0 +1,102 @@
+/* ===============================
+   Seção de Busca - Search
+=============================== */
+.Search {
+  min-height: 70vh; /* usa min-height em vez de height fixa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.search-content-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.search-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Input de busca */
+.search-content input {
+  border-radius: 10px 0 0 10px;
+  width: 30vw;
+  min-width: 200px;
+  border-right: none;
+  border: 1px solid #ccc;
+  padding: 12px 25px;
+  height: 60px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.search-content input:focus {
+  border-color: coral;
+}
+
+/* Botão de busca */
+.search-content button {
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  background-color: coral;
+  color: white;
+  padding: 12px 25px;
+  height: 60px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-content button:hover {
+  background-color: #ff7f50cc;
+}
+
+/* ===============================
+   Responsividade
+=============================== */
+@media (max-width: 768px) {
+  .search-content {
+    flex-direction: column; /* empilha input e botão */
+    gap: 15px;
+  }
+
+  .search-content input,
+  .search-content button {
+    width: 90%; /* não ocupa 100%, deixa espaço para centralizar */
+    border-radius: 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 480px) {
+  .Search {
+    min-height: calc(100vh - 100px); /* ocupa altura total menos header */
+    justify-content: center; /* centraliza verticalmente */
+  }
+
+  .search-content-title {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+  }
+
+  .search-content input,
+  .search-content button {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
