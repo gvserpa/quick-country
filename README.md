@@ -2,7 +2,7 @@
 
 [Live Demo](https://quick-country.vercel.app/)
 
-Quick Country is a **React + Vite project** that displays detailed information about countries, including **flags, capitals, population, continent**, and **real-time currency exchange rates**. The project consumes data from the **Unsplash** and **ExchangeRate APIs**, and was built with a focus on **responsiveness, modern design, and usability**.
+Quick Country is a **React + Vite project** that displays detailed information about countries, including **flags, capitals, population, continent**, and **real-time currency exchange rates**. The project consumes data from the **Unsplash API**, **REST Countries API** and **ExchangeRate APIs**, and was built with a focus on **responsiveness, modern design, and usability**.
 
 ---
 
