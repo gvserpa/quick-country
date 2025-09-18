@@ -12,7 +12,8 @@ Quick Country is a **React + Vite project** that displays detailed information a
 - [Vite](https://vitejs.dev/) – Fast frontend build tool  
 - [Axios](https://axios-http.com/) – For HTTP requests  
 - [Unsplash API](https://unsplash.com/developers) – Country images  
-- [ExchangeRate API](https://exchangerate.host/) – Real-time currency exchange rates  
+- [ExchangeRate API](https://exchangerate.host/) – Real-time currency exchange rates
+- [REST Countries API](https://restcountries.com/) – Country information (name, capital, population, flags, continent)
 - Modern CSS with **flexbox, shadows, gradients, and responsive design**
 
 ---
